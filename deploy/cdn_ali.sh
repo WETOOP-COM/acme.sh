@@ -60,10 +60,8 @@ _set_cert_query() {
   query=''
   query=$query'AccessKeyId='$DEPLOY_CDN_Ali_Key
   query=$query'&Action=BatchSetCdnDomainServerCertificate'
-  query=$query'&CertName='$2
   query=$query'&CertType=upload'
   query=$query'&DomainName='$1
-  query=$query'&ForceSet=1'
   query=$query'&Format=JSON'
   query=$query'&SSLPri='$4
   query=$query'&SSLProtocol=on'
@@ -127,3 +125,4 @@ _ali_nonce() {
 _timestamp() {
   date -u +"%Y-%m-%dT%H%%3A%M%%3A%SZ"
 }
+
